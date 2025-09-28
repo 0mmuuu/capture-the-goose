@@ -49,7 +49,7 @@ export const siteConfig: SiteConfig = {
 	// 	title: "Notes",
 	// },
 // ];
-
+//
 // https://expressive-code.com/reference/configuration/
 export const expressiveCodeOptions: AstroExpressiveCodeOptions = {
 	styleOverrides: {
