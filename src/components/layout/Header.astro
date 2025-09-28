@@ -1,35 +1,29 @@
+---
 import ThemeToggle from "@/components/ThemeToggle.astro";
 import {siteConfig} from "../../site.config";
 ---
 
 <header class="group relative mb-28 flex items-start justify-between sm:ps-18" id="main-header">
-    
-    <div class="flex sm:flex-col items-start">
-        
+    <div class="flex sm:flex-col">
         <a
             aria-current={Astro.url.pathname === "/about" ? "page" : false}
+            class="inline-flex items-start sm:relative sm:inline-block"
             href="/about"
-            
-            class="me-3 inline-flex items-start sm:relative sm:inline-block sm:absolute sm:-start-18 sm:me-0 h-10 w-6 sm:h-20 sm:w-12 grayscale hover:filter-none"
         >
             <img
                 src="/goose.svg"
-                alt="Goose Icon"
-                class="" 
-                width="48"
-                height="48"
+                alt="Goose Logo"
+                class="me-3 h-10 w-6 sm:absolute sm:-start-18 sm:me-0 sm:h-20 sm:w-12"
             />
+            
+            <span class="text-xl font-bold sm:text-4xl **relative top-20**">
+                {siteConfig.title}
+            </span>
         </a>
-
-        <span class="text-xl font-bold sm:text-4xl relative top-20">
-            {siteConfig.title}
-        </span>
     </div>
-
     <div class="ms-auto">
         <ThemeToggle />
     </div>
-
     <mobile-button>
         <button
             aria-expanded="false"
@@ -56,6 +50,7 @@ import {siteConfig} from "../../site.config";
             <svg
                 aria-hidden="true"
                 class="text-accent absolute start-1/2 top-1/2 h-full w-full -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all group-aria-expanded:scale-100 group-aria-expanded:opacity-100"
+                class="text-accent"
                 fill="none"
                 focusable="false"
                 id="cross-svg"
