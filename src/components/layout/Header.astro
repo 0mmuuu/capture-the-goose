@@ -5,7 +5,7 @@ import {siteConfig} from "../../site.config";
 
 <header class="group relative mb-28 flex items-start justify-between sm:ps-18" id="main-header">
     <div class="flex sm:flex-col">
-        <a
+                <a
             aria-current={Astro.url.pathname === "/about" ? "page" : false}
             class="inline-flex items-start sm:relative sm:inline-block"
             href="/about"
@@ -13,13 +13,13 @@ import {siteConfig} from "../../site.config";
             <img
                 src="/goose.svg"
                 alt="Goose Logo"
-                                class="me-3 h-10 w-10 sm:absolute sm:-start-24 sm:me-0 sm:h-20 sm:w-20"
+                class="me-3 h-15 w-15 sm:absolute sm:-start-24 sm:me-0 sm:h-20 sm:w-20"
             />
-            
-            <span class="text-xl font-bold sm:text-4xl **relative top-20**">
-                {siteConfig.title}
-            </span>
         </a>
+        
+                <span class="text-xl font-bold sm:text-4xl **relative top-20**">
+            {siteConfig.title}
+        </span>
     </div>
     <div class="ms-auto">
         <ThemeToggle />
