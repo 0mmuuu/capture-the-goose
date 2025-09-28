@@ -3,11 +3,11 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
 import {siteConfig} from "../../site.config";
 ---
 
-<header class="group relative mb-28 flex items-start justify-between sm:ps-18 items-center" id="main-header">
-    <div class="flex sm:flex-col">
+<header class="group relative mb-28 flex justify-between sm:ps-18 items-center" id="main-header">
+    <div class="flex sm:flex-col items-center">
         <a
             aria-current={Astro.url.pathname === "/about" ? "page" : false}
-            class="inline-flex items-start sm:relative sm:inline-block"
+            class="inline-flex items-center sm:relative sm:inline-block"
             href="/about"
         >
             <img
@@ -17,7 +17,7 @@ import {siteConfig} from "../../site.config";
             />
         </a>
         
-                <span class="text-xl font-bold sm:text-4xl **relative top-5**">
+                <span class="text-xl font-bold sm:text-4xl">
             {siteConfig.title}
         </span>
     </div>
