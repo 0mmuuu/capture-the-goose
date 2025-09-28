@@ -3,16 +3,16 @@ import {siteConfig } from "@/site.config";
 const year = new Date().getFullYear();
 ---
 <footer
-	class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-600 sm:flex-row sm:justify-between sm:text-xs dark:text-gray-400"
+    class="mt-auto flex w-full flex-col items-center justify-center gap-y-2 pt-20 pb-4 text-center align-top font-semibold text-gray-600 sm:flex-row sm:justify-between sm:text-xs dark:text-gray-400"
 >
-	<div class="me-0 sm:me-4">
-		&copy; {siteConfig.author}
-		{year}.<span class="inline-block">&nbsp;🥚&nbsp;{siteConfig.title}</span>
-	</div>
-	<nav
-		aria-labelledby="footer_links"
-		class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
-	>
-		<p id="footer_links" class="sr-only">More on this site</p>
-	</nav>
+    <div class="me-0 sm:me-4">
+        &copy; {siteConfig.author}
+        {year}.<span class="inline-block" title="HackUMBC{Y0u f0und th3 f1ag h1dd3n in th3 3gg!}'?">&nbsp;🥚&nbsp;{siteConfig.title}</span>
+    </div>
+    <nav
+        aria-labelledby="footer_links"
+        class="flex gap-x-2 sm:gap-x-0 sm:divide-x sm:divide-gray-500"
+    >
+        <p id="footer_links" class="sr-only">More on this site</p>
+    </nav>
 </footer>
