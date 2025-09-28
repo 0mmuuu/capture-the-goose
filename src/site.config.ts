@@ -27,15 +27,15 @@ export const siteConfig: SiteConfig = {
 	*/
 	title: "Capture the Goose",
 	// ! Please remember to replace the following site property with your own domain, used in astro.config.ts
-	url: "http://capturethegoose.tech/",
+	url: "http://capturethegoose.tech/lander",
 };
 
 // Used to generate links in both the Header & Footer.
 export const menuLinks: { path: string; title: string }[] = [
-	{
-		path: "/",
-		title: "Home",
-	}
+	// {
+	// 	path: "/",
+	// 	title: "Home",
+	// }
 	// {
 	// 	path: "/about/",
 	// 	title: "About",
