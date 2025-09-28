@@ -3,18 +3,18 @@ import ThemeToggle from "@/components/ThemeToggle.astro";
 import {siteConfig} from "../../site.config";
 ---
 
-<header class="group relative mb-28 flex items-start justify-between sm:ps-18" id="main-header">
+<header class="group relative mb-28 flex items-start justify-between sm:ps-6" id="main-header">
     <div class="flex sm:flex-col">
         <a
             aria-current={Astro.url.pathname === "/about" ? "page" : false}
-            class="inline-flex items-start sm:relative sm:inline-block"
+            class="inline-flex items-start sm:inline-block"
             href="/about"
         >
             <img
                 src="/goose.svg"
                 alt="Goose Logo"
                 
-                class="me-6 h-12 w-8 sm:absolute sm:-start-36 sm:me-0 sm:h-64 sm:w-36"
+                class="me-3 h-16 w-32 sm:me-6 sm:h-20 sm:w-40"
             />
         </a>
         
